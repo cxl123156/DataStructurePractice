@@ -1,4 +1,4 @@
-package cxl.study.datastructure.linkedlist.leetcode;
+package cxl.study.leetcode;
 
 public class DFS {
 

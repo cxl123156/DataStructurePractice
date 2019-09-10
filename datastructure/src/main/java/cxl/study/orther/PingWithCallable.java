@@ -1,4 +1,4 @@
-package cxl.study.datastructure.linkedlist;
+package cxl.study.orther;
 
 import java.io.BufferedReader;
 import java.io.IOException;

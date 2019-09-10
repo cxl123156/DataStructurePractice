@@ -1,4 +1,4 @@
-package cxl.study.datastructure.linkedlist.leetcode;
+package cxl.study.leetcode;
 
 import java.util.ArrayList;
 import java.util.List;
