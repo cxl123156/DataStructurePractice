@@ -68,15 +68,18 @@ public class SingleLinkedList<T> {
         }
     }
 
-    public LinkedList inverse(){
-        Node prevNode = head;
+    public void inverse(){
+        Node prevNode = null;
         Node current = head.next;
-        Node temp = null;
-        while(head.next!=null){
-            temp = current;
-            current = current.next;
+        Node next = null;
+
+        while(current!=null){
+            prevNode = current.next;
+            current.next = next;
+            next = current;
+            current = prevNode;
         }
-        return null;
+        head.next = next;
     }
 
     @Override
@@ -89,13 +92,10 @@ public class SingleLinkedList<T> {
 
     public static void main(String[] args) {
         SingleLinkedList<Integer> singleLinkedList = new SingleLinkedList<>();
-        singleLinkedList.add(1);
-        singleLinkedList.add(2);
-        singleLinkedList.add(3);
-        System.out.println(singleLinkedList.get(2));
-        singleLinkedList.remove(2);
+            singleLinkedList.add(1);
+        System.out.println(singleLinkedList);
+        singleLinkedList.inverse();
         System.out.println(singleLinkedList);
 
     }
-
 }
