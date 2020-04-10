@@ -4,6 +4,10 @@ import java.util.ArrayList;
 import java.util.List;
 import java.util.Stack;
 
+/**
+ * 22. 括号生成
+ * https://leetcode-cn.com/problems/generate-parentheses/#/description
+ */
 public class LeetCode_22_GenerateParentheses {
 
     List<String> result = new ArrayList<>();
